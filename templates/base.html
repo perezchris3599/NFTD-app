@@ -22,6 +22,19 @@
             </div>
        </form>
        
+       {% for todo in todo_list %}
+          <p> {{ todo.id }} | {{ todo.title }}</p>
+
+          {% if todo.complete == False %}
+             <span>Not complete</span>
+          {% else %}
+             <span>Completed</span>
+          {% endif %}
+
+          <a href="">Update</a>
+          <a href="">Delete</a>
+
+       {% endfor %}
         
         <script src="" async defer></script>
     </body>
