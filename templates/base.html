@@ -31,8 +31,8 @@
              <span>Completed</span>
           {% endif %}
 
-          <a href="/">Update</a>
-          <a href="/">Delete</a>
+          <a href="/update/{{ todo.id }}">Update</a>
+          <a href="/delete/{{ todo.id }}">Delete</a>
 
        {% endfor %}
         
