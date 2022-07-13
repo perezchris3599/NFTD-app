@@ -13,7 +13,7 @@
     <body>
        <h1>todo</h1>
 
-       <form action="">
+       <form action="/add" method="post">
             <div>
                 <label for="title">Todo title</label>
                 <input type="text" name="title" placeholder="Enter todo">
@@ -31,8 +31,8 @@
              <span>Completed</span>
           {% endif %}
 
-          <a href="">Update</a>
-          <a href="">Delete</a>
+          <a href="/">Update</a>
+          <a href="/">Delete</a>
 
        {% endfor %}
         
